@@ -165,22 +165,43 @@ img{
     color: rgb(255, 255, 255);
     line-height: 1.98;
     text-align: center;
-    z-index: 30;
+}
+
+
+.container  {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /*Members----------------*/
-.container-fluid {
-    width: 100%;
-}
 
 #member {
     height: auto;
     background-color: rgb(92, 180, 193);
 }
 
+#member .col-lg-4, .col-md-4{
+    padding: 0;
+    padding-left: 20px;
+}
+
+#member .num {
+    float: left;
+    border-radius: 50%;
+    background-color: rgb(253, 204, 87);
+    width: 98px;
+    height: 98px;
+    font-size: 70px;
+    font-family: "Lato", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.386;
+    text-align: center;
+    margin:0 20px 15px 0;
+}
+
 #member h4 {
-    /*position: relative;*/
-    margin: 20px 0;
+    margin-top: 20px;
     font-size: 28px;
     font-family: "Lato", sans-serif;
     color: rgb(255, 255, 255);
@@ -190,8 +211,6 @@ img{
 
 #member p {
     margin-top: 1em;
-    float: right;
-    display: block;
     font-size: 14px;
     font-family: "Lato", sans-serif;
     color: rgb(255, 255, 255);
@@ -205,36 +224,59 @@ img{
     padding-bottom: 50px;
 }
 
-.num {
-    position: relative;
-    float: left;
-    border-radius: 50%;
-    background-color: rgb(253, 204, 87);
-    width: 98px;
-    height: 98px;
-    font-size: 70px;
-    font-family: "Lato", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.386;
-    text-align: center;
-    margin: 20px 15px 0;
-}
-
 /*Towards--------------*/
 #towards {
     height: auto;
 }
 
-#towards .towards-container {
-    padding: 0;
+#towards .read-more-btn:after,
+.read-more-btn:before {
+    content: '';
+    width: 55%;
+    top: 0;
+    height: 100%;
+    background:  #FDCC57;
+    box-sizing: content-box;
+    position: absolute;
+    transition: all 0.3s;
+    overflow: hidden;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11*/
-#towards .col-lg-3 {
-    height: auto;
-    padding: 0;
-    width: 23.5%;
-    margin: .4%;
+#towards .read-more-btn span {
+    position: relative;
+    z-index: 24;
+}
+#towards .read-more-btn:before {
+    left: 0;
+}
+#towards .read-more-btn:after {
+    right: 0;
+}
+#towards .read-more-btn {
+    font-family: 'Lato', Times, serif;
+    font-size: 15pt;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    width: 180px;
+    height: 56px;
+    background: #5cb4c1;
+    transition: all 0.3s;
+    text-decoration: none;
+    line-height: 56px;
+    text-align: center;
+    position: relative;
+}
+#towards .button{
+    padding: 20px 45%;
+}
+
+#towards .read-more-btn:hover:before{
+    width: 0;
+    overflow: visible;
+}
+#towards .read-more-btn:hover:after {
+    width: 0;
+    overflow: visible;
 }
 
 #towards h2 {
@@ -243,8 +285,19 @@ img{
     z-index: 51;
 }
 
+#towards .row{
+    text-align: center;
+}
+
+#towards .img-couple{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 #towards figure {
+    height: auto;
     width: auto;
+
     text-align: center;
     border-radius: 50%;
     overflow: hidden;
@@ -253,6 +306,7 @@ img{
 }
 
 #towards figure img {
+    border-radius: 50%;
     max-width: 100%;
     transform: scale(1.1);
     transition: transform 200ms ease, opacity 300ms ease-in;
@@ -287,24 +341,25 @@ img{
     /*background:url(../images/zoom.png) 50% 50% no-repeat;*/
     /*content:"";*/
 /*}*/
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-#towards .col-lg-3:first-child {
-    margin-left: 0;
-}
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-#towards .col-lg-3 h5 a {
+
+
+#towards h5  {
     font-size: 23px;
     font-family: "Lato", sans-serif;
     color: rgb(55, 66, 70);
     line-height: 1.217;
     text-align: left;
+
+}
+
+#towards h5 a{
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     transition-duration: 0.5s;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-#towards .col-lg-3 h5 a:hover {
+
+#towards h5:hover a {
     text-decoration: none;
     color: #5cb4c1;
 }
@@ -324,6 +379,7 @@ img{
 }
 
 #about h6 {
+    margin: 20px 0;
     font-size: 23px;
     font-family: "Lato", sans-serif;
     color: rgb(255, 255, 255);
@@ -333,19 +389,15 @@ img{
 }
 
 #contacts {
-    height: auto;
+    height: 492px;
     text-align: center;
     background: no-repeat;
-    background-size: auto;
+    background-position-y: -300px;
 }
 
-#contacts .container {
-    padding: 0;
-}
+#contacts .container{
+    padding: 70px 0;
 
-#contacts section {
-    padding-bottom: 20px;
-    padding-top: auto;
 }
 
 #contacts span {
@@ -382,11 +434,15 @@ img{
 .main_footer {
     position: relative;
     display: block;
-    margin-top: 15px;
-    margin-bottom: 3%;
+    padding-top: 15px;
+    padding-bottom: 50px;
     text-align: center;
     color: #777777;
 }
+.main_footer .col-sm-12{
+    /*padding: 25% 0;*/
+}
+
 .main_footer a {
     color: #777777;
     text-decoration: none;
