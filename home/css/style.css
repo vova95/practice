@@ -15,7 +15,7 @@ header {
     opacity: 0.8;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -167,8 +167,7 @@ img{
     text-align: center;
 }
 
-
-.container  {
+.container {
     padding-left: 0;
     padding-right: 0;
 }
@@ -180,7 +179,7 @@ img{
     background-color: rgb(92, 180, 193);
 }
 
-#member .col-lg-4, .col-md-4{
+#member .col-lg-4, .col-md-4 {
     padding: 0;
     padding-left: 20px;
 }
@@ -197,7 +196,7 @@ img{
     font-weight: bold;
     line-height: 1.386;
     text-align: center;
-    margin:0 20px 15px 0;
+    margin: 0 20px 15px 0;
 }
 
 #member h4 {
@@ -235,22 +234,26 @@ img{
     width: 55%;
     top: 0;
     height: 100%;
-    background:  #FDCC57;
+    background: #FDCC57;
     box-sizing: content-box;
     position: absolute;
     transition: all 0.3s;
     overflow: hidden;
 }
+
 #towards .read-more-btn span {
     position: relative;
     z-index: 24;
 }
+
 #towards .read-more-btn:before {
     left: 0;
 }
+
 #towards .read-more-btn:after {
     right: 0;
 }
+
 #towards .read-more-btn {
     font-family: 'Lato', Times, serif;
     font-size: 15pt;
@@ -266,14 +269,16 @@ img{
     text-align: center;
     position: relative;
 }
-#towards .button{
+
+#towards .button {
     padding: 20px 45%;
 }
 
-#towards .read-more-btn:hover:before{
+#towards .read-more-btn:hover:before {
     width: 0;
     overflow: visible;
 }
+
 #towards .read-more-btn:hover:after {
     width: 0;
     overflow: visible;
@@ -285,11 +290,11 @@ img{
     z-index: 51;
 }
 
-#towards .row{
+#towards .row {
     text-align: center;
 }
 
-#towards .img-couple{
+#towards .img-couple {
     padding-left: 0;
     padding-right: 0;
 }
@@ -297,7 +302,6 @@ img{
 #towards figure {
     height: auto;
     width: auto;
-
     text-align: center;
     border-radius: 50%;
     overflow: hidden;
@@ -305,7 +309,7 @@ img{
     -webkit-backface-visibility: hidden;
 }
 
-#towards figure img {
+#towards figure a img {
     border-radius: 50%;
     max-width: 100%;
     transform: scale(1.1);
@@ -317,33 +321,37 @@ img{
     opacity: 0.5;
     transform: scale(1.2) rotate(-5deg);
     cursor: pointer;
+
 }
 
-/*.zoom-icon{*/
-    /*background: none;*/
-    /*position: absolute;*/
-    /*top: 0; right: 0;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*display: block;*/
-    /*opacity: 0;*/
-    /*cursor: pointer;*/
-/*}*/
+#towards figure:hover .zoom-btn img{;
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
 
-/*.zoom-icon:before{*/
-    /*position:absolute;*/
-    /*top:50%;*/
-    /*left:50%;*/
-    /*display:block;*/
-    /*margin:-13px 0 0 -13px;*/
-    /*width:25px;*/
-    /*height:26px;*/
-    /*background:url(../images/zoom.png) 50% 50% no-repeat;*/
-    /*content:"";*/
-/*}*/
+.zoom-btn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 25;
+    /*line-height: 100%;*/
 
+}
+.zoom-btn img{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    margin: -25px 0 0 -25px;
+    transform: scale(0);
+    visibility: hidden;
+    transition: 0.2s;
+}
 
-#towards h5  {
+#towards h5 {
     font-size: 23px;
     font-family: "Lato", sans-serif;
     color: rgb(55, 66, 70);
@@ -352,7 +360,7 @@ img{
 
 }
 
-#towards h5 a{
+#towards h5 a {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
@@ -389,13 +397,12 @@ img{
 }
 
 #contacts {
-    height: 492px;
+    height: auto;
     text-align: center;
     background: no-repeat;
-    background-position-y: -300px;
 }
 
-#contacts .container{
+#contacts .container {
     padding: 70px 0;
 
 }
@@ -413,34 +420,30 @@ img{
     float: left;
 }
 
-#contacts p{
+#contacts p {
     text-align: center;
     color: #fff;
 }
 
-.phone:before{
+.phone:before {
     padding-right: 5px;
     font-family: FontAwesome, serif;
     content: '\f095';
 }
 
-.phone{
+.phone {
     font: normal 39px/47px Lato, sans-serif;
     font-family: "Lato", sans-serif;
     color: rgb(255, 255, 255);
     line-height: 0.833;
 }
 
-.main_footer {
+.footer {
     position: relative;
-    display: block;
-    padding-top: 15px;
-    padding-bottom: 50px;
-    text-align: center;
-    color: #777777;
-}
-.main_footer .col-sm-12{
-    /*padding: 25% 0;*/
+    margin-top: -150px;
+    height: 150px;
+    clear: both;
+    padding-top: 20px;
 }
 
 .main_footer a {
