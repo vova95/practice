@@ -230,7 +230,7 @@ ul.list a:before {
     padding: 0;
     position: relative;
     top: -2px;
-    right: 2px;
+    right: 0px;
     overflow: hidden;
     transition: 0.4s Ease;
 }
@@ -471,22 +471,6 @@ ul.list li a:hover {
     width: 0;
     overflow: visible;
 }
-
-/*.curtain {*/
-/*width: 180px;*/
-/*height: 56px;*/
-/*text-align: center;*/
-/*line-height: 56px;*/
-/*background: #5CB4C1;*/
-/*vertical-align: middle;*/
-/*}*/
-
-/*.current-news .read-more-btn:hover {*/
-/*text-decoration: none;*/
-/*color: #ffffff;*/
-/*height: 0;*/
-/*}*/
-
 .pagination > .active > a,
 .pagination > .active > a:focus,
 .pagination > .active > a:hover,
@@ -529,24 +513,54 @@ ul.list li a:hover {
     color: #fdcc57;
 }
 
-#scroll_up {
-    width: 100px;
-    border: 1px solid #ccc;
-    background: #f7f7f7;
-    text-align: center;
-    padding: 5px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    cursor: pointer;
-    display: none;
-    color: #333;
-    /*font-family:verdana;*/
-    font-size: 11px;
-    transform-style: preserve-3d;
-    transition: transform 1s;
+/*#back-top-wrapper {
+  z-index: 200;
+  right: 20px;
+  bottom: 20px;
+}*/
+#back-top-wrapper {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  overflow: hidden;
+  z-index: 99;
 }
-#scroll_up.flipped {
-    transform: rotateY( 180deg );
+/*.visible-desktop {
+  display: inherit !important;
+}*/
+#back-top-wrapper #back-top a {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  background: none;
+  color: #bbb;
+  display: block;
 }
+#back-top-wrapper #back-top a:after {
+  content: '';
+  font: 42px/48px FontAwesome;
+  color: #d9d9d9;
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+  transition: all 0.3s;
+}
+#back-top-wrapper #back-top a span {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    transition: all 0.8s;
+}
+#back-top-wrapper #back-top a:hover>span {
+    background: #fff;
+}
+#back-top-wrapper #back-top a:hover:after {
+  transform: rotateY(360deg);
+  color: #fdcc57;
+}
+
+
 

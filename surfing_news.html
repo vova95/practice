@@ -15,7 +15,7 @@
     <!--<script type="text/javascript" src="js/smoothing-scroll.js"></script>-->
 
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="libs/fontawesome/css/font-awesome.min.css"/>
+    <link href="libs/fontawesome/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="libs/animate.css/animate.min.css" rel="stylesheet">
 
@@ -29,17 +29,15 @@
         $(function () {
             $(window).scroll(function () {
                 if ($(this).scrollTop() != 0) {
-                    $('#scroll-up').fadeIn();
+                    $('#top').fadeIn();
                 } else {
-                    $('#scroll-up').fadeOut();
+                    $('#top').fadeOut();
                 }
             });
-            $('#scroll-up').click(function () {
+            $('#top').click(function () {
                 $('body,html').animate({scrollTop: 0}, 800);
             });
         });
-
-
     </script>
 </head>
 <body>
@@ -263,11 +261,15 @@
     </div>
 </section>
 <footer class="main_footer">
-    <div class="scroll">
-        <div id="scroll_up">Наверх</div>
+    <div id="back-top-wrapper" class="visible-desktop">
+        <div id="back-top" style="display: block;">
+            <a id="top">
+                <span></span>
+            </a>
+        </div>
     </div>
     <div class="container">
-        <div class="row navbar-fixed-bottom">
+        <div class="row">
             <div class="col-md-12">
                 <a href="#">Surfing</a> &copy; 2015. <a href="#">Privacy Policy</a>
             </div>
