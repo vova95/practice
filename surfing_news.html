@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/wow/dist/wow.min.js"></script>
+
+    <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/jquery.iu.toTop.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
     <!--<script type="text/javascript" src="js/smoothing-scroll.js"></script>-->
-    <script type="text/javascript" src="js/script.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="libs/fontawesome/css/font-awesome.min.css"/>
+    <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/animate.css/animate.min.css" rel="stylesheet">
+
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"/>
-    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
@@ -40,8 +44,11 @@
 </head>
 <body>
 <header>
-    <div class="menu_panel">
-        <a class="icon">SURFING</a>
+<div class="menu_panel">
+    <div class="menu_panel_inner_container">
+        <a class="icon">
+            <img class="logo" src="./img/logo.png">
+        </a>
         <div class="select_menu_tel">
             <select class="select_menu">
                 <option value="#">Navigate to...</option>
@@ -79,12 +86,13 @@
                     </ul>
                 </li>
                 <li><a class="gallery" href="">GALLERY</a></li>
-                <li class="active"><a class="news" href="">NEWS</a></li>
+                <li><a class="news" href="">NEWS</a></li>
                 <li><a class="contacts" href="">CONTACTS</a></li>
             </ul>
         </div>
     </div>
-    <div class="navigation_panel"></div>
+</div>
+<div class="navigation_panel"></div>
 </header>
 <section class="news_section">
     <div class="container-fluid">
