@@ -23,7 +23,6 @@ h1 {
     font-weight: 500;
     color: #080808;
     font: 49px/1em 'Lato', sans-serif;
-    text-align: center;
 }
 
 /*========================================================
@@ -122,13 +121,9 @@ ul {
     z-index: 10;
     /*display: none;*/
     visibility: hidden;
-    overflow: hidden;
     background: #4C4C4D;
-
-    height: 0;
-}
-.navigation>li:hover>.sub_menu {
-    transition: all 0.2s;
+    /*transition: all 0.2s;*/
+    /*height: 0;*/
 }
 
 li > .sub_menu li {
@@ -150,9 +145,7 @@ li > .sub_menu li {
 }
 
 li:hover > .sub_menu {
-    height: auto;
     visibility: visible;
-    overflow: visible;
 }
 
 .navigation > li > .sub_menu > li > .sub_menu {
@@ -232,14 +225,14 @@ ul.list a {
 ul.list a:before {
     font-family: FontAwesome, serif;
     content: '\f105';
-    color: rgba(28, 15, 15, 0.73);
+    color: #080808;
     display: inline-block;
     vertical-align: middle;
     max-width: 0;
     padding: 0;
     position: relative;
     top: -2px;
-    right: 2px;
+    right: -3px;
     overflow: hidden;
     transition: 0.4s Ease;
 }
@@ -289,7 +282,7 @@ ul.list li a:hover {
 
 .post span {
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .post a {
@@ -303,13 +296,13 @@ ul.list li a:hover {
     color: #FDCC57;
     text-decoration: none;
 }
-.post h3 {
-    padding-left: 30px;
-    padding-bottom: 10px;
-}
+
 .post p {
-    padding: 0 30px 30px;
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
 .recent_comments {
     /*max-width: 370px;*/
     /*padding-top: 20px;*/
@@ -418,7 +411,6 @@ ul.list li a:hover {
     padding-right: 0;
     padding-left: 0;
     margin-top: 20px;
-    animation-duration: 2.5s;
 }
 
 .content .news_image {
@@ -521,7 +513,6 @@ ul.list li a:hover {
                        Footer Section
 ========================================================*/
 .main_footer {
-    bottom: 0;
     display: block;
     margin-top: 15px;
     margin-bottom: 30px;

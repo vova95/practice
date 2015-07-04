@@ -9,19 +9,16 @@
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/jquery.iu.toTop.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
     <!--<script type="text/javascript" src="js/smoothing-scroll.js"></script>-->
     <script type="text/javascript" src="js/script.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"/>
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/styleprototype.css">
+    <link rel="stylesheet" href="css/media1.css">
 
     <title></title>
     <script type="text/javascript">
-        new WOW().init();
         $(function () {
             $(window).scroll(function () {
                 if ($(this).scrollTop() != 0) {
@@ -34,14 +31,13 @@
                 $('body,html').animate({scrollTop: 0}, 800);
             });
         });
-
-
     </script>
 </head>
 <body>
 <header>
     <div class="menu_panel">
-        <a class="icon">SURFING</a>
+        <a class="icon"><img src="img/logo.png"></a>
+
         <div class="select_menu_tel">
             <select class="select_menu">
                 <option value="#">Navigate to...</option>
@@ -63,9 +59,9 @@
         </div>
         <div class="news_buttons">
             <ul class="navigation">
-                <li><a class="home" href="">HOME</a></li>
+                <li><a href="">HOME</a></li>
                 <li>
-                    <a class="about" href="">ABOUT</a>
+                    <a href="">ABOUT</a>
                     <ul class="sub_menu">
                         <li>
                             <a href="">Testimonials</a>
@@ -78,9 +74,9 @@
                         <li><a href="">FAQs</a></li>
                     </ul>
                 </li>
-                <li><a class="gallery" href="">GALLERY</a></li>
+                <li><a href="">GALLERY</a></li>
                 <li class="active"><a class="news" href="">NEWS</a></li>
-                <li><a class="contacts" href="">CONTACTS</a></li>
+                <li><a href="">CONTACTS</a></li>
             </ul>
         </div>
     </div>
@@ -94,7 +90,7 @@
                     <article class="current_news">
                         <h1><a>Aliquam erat volutpat</a></h1>
 
-                        <div class="container wow fadeIn"><img class="news_image" src="img/img-10.jpg"
+                        <div class="container"><img class="news_image" src="img/img-10.jpg"
                                                     alt="Aliquam erat volutpat"/>
                         </div>
                         <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim,
@@ -110,12 +106,12 @@
                             odio.
                             Morbi…</p>
 
-                        <a class="read_more_btn btn_vertical" href=""><span>READ MORE</span></a>
+                        <a class="read_more_btn btn-vertical" href=""><span>READ MORE</span></a>
                     </article>
                     <article class="current_news">
                         <h1><a>Mauris posuere</a></h1>
 
-                        <div class="container wow fadeIn"><img class="news_image" src="img/img-11.jpg"
+                        <div class="container"><img class="news_image" src="img/img-11.jpg"
                                                     alt="Aliquam erat volutpat"/>
                         </div>
                         <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim,
@@ -136,7 +132,7 @@
                     <article class="current_news">
                         <h1><a>Mauris posuere</a></h1>
 
-                        <div class="container wow fadeIn"><img class="news_image" src="img/img-12.jpg"
+                        <div class="container"><img class="news_image" src="img/img-12.jpg"
                                                     alt="Aliquam erat volutpat"/>
                         </div>
                         <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim,
@@ -166,23 +162,23 @@
                 <div class="categories block">
                     <h1 class="list_categories">Categories</h1>
                     <ul class="list">
-                        <li class="list_item"><a>Aliquam congue fermentum nisl</a></li>
-                        <li class="list_item"><a>Fusce euismod consequat ante</a></li>
-                        <li class="list_item"><a>Lorem ipsum dolor sit amet adipiscing elit</a></li>
-                        <li class="list_item"><a>Mauris accumsan nulla vel diam</a></li>
-                        <li class="list_item"><a>Pellentesque sed dolor</a></li>
-                        <li class="list_item"><a>Proin dictum elementum velit</a></li>
-                        <li class="list_item"><a>Sed in lacus ut enim adipiscing aliquet</a></li>
-                        <li class="list_item"><a>Vestibulum iaculis lacinia est</a></li>
+                        <li class="list-item"><a>Aliquam congue fermentum nisl</a></li>
+                        <li class="list-item"><a>Fusce euismod consequat ante</a></li>
+                        <li class="list-item"><a>Lorem ipsum dolor sit amet adipiscing elit</a></li>
+                        <li class="list-item"><a>Mauris accumsan nulla vel diam</a></li>
+                        <li class="list-item"><a>Pellentesque sed dolor</a></li>
+                        <li class="list-item"><a>Proin dictum elementum velit</a></li>
+                        <li class="list-item"><a>Sed in lacus ut enim adipiscing aliquet</a></li>
+                        <li class="list-item"><a>Vestibulum iaculis lacinia est</a></li>
                     </ul>
                 </div>
-                <div class="recent_posts block">
+                <div class="recent-posts block">
                     <h1>Recent posts</h1>
 
                     <div class="post">
                         <img class="recent_post_image" src="img/img-10.jpg" alt="Aliquam erat volutpat"/>
                         <span class="glyphicon glyphicon-calendar"></span>
-                        <time class="post_date">May 27, 2014 6:31 am</time>
+                        <time class="post-date">May 27, 2014 6:31 am</time>
 
                         <h3><a href="#">Aliquam erat volutpat</a></h3>
 
@@ -194,7 +190,7 @@
                     <div class="post">
                         <img class="recent_post_image" src="img/img-11.jpg" alt="Mauris posuere"/>
                         <span class="glyphicon glyphicon-calendar"></span>
-                        <time class="post_date">March 14, 2013 8:28 pm</time>
+                        <time class="post-date">March 14, 2013 8:28 pm</time>
 
                         <h3><a href="#">Mauris posuere</a></h3>
 
@@ -206,7 +202,7 @@
                     <div class="post">
                         <img class="recent_post_image" src="img/img-12.jpg" alt="Mauris posuere"/>
                         <span class="glyphicon glyphicon-calendar"></span>
-                        <time class="post_date">March 5, 2013 8:31 pm</time>
+                        <time class="post-date">March 5, 2013 8:31 pm</time>
 
                         <h3><a href="#">Donec tempor libero</a></h3>
 
@@ -259,7 +255,7 @@
         <div id="scroll_up">Наверх</div>
     </div>
     <div class="container">
-        <div class="row navbar-fixed-bottom">
+        <div class="row">
             <div class="col-md-12">
                 <a href="#">Surfing</a> &copy; 2015. <a href="#">Privacy Policy</a>
             </div>

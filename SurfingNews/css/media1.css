@@ -34,6 +34,10 @@
         color: #ffffff;
         font-size: 37pt;
     }
+    /*.recent-post-image {*/
+        /*width: 284px;*/
+        /*height: 178px;*/
+    /*}*/
     .news_section {
         /*max-height: 2135px;*/
         padding-right: 40px;
@@ -44,6 +48,21 @@
     .current_news h1 {
         font: 48px/1em 'Lato', sans-serif;
     }
+
+    /*.content .news-image {*/
+        /*width: 600px;*/
+        /*height: 450px;*/
+        /*transition: transform 200ms ease, opacity 300ms ease-in;*/
+        /*-webkit-transition: -webkit-transform 200ms ease, -webkit-opacity 300ms ease-in;*/
+    /*}*/
+    /*.current-news .container {*/
+        /*overflow: hidden;*/
+        /*max-width: 600px;*/
+        /*height: 450px;*/
+        /*padding-right: 0;*/
+        /*padding-left: 0;*/
+        /*margin-top: 20px;*/
+    /*}*/
     h1 {
         font: 29px/1em 'Lato', sans-serif;
         margin-bottom: 15px;
@@ -106,6 +125,33 @@
     .recent_post_image {
         width: 219px;
         height: 153px;
+    }
+    .comment {
+        margin-top: 40px;
+        height: 430px;
+    }
+    .comment .avatar {
+        position: inherit;
+        height: 225px;
+        /*width: 255px;*/
+        padding-bottom: 10px;
+    }
+    .comment .glyphicon {
+        color: #E9638E;
+        padding-right: 7px;
+    }
+
+    .comment .username {
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        padding-left: 0;
+    }
+
+    .comment .comment_date {
+        display: block;
+        padding-left: 0;
+        padding-bottom: 5px;
     }
     .scroll {
         display: none;
@@ -204,36 +250,35 @@
         width: 100%;
         height: auto;
     }
-
-    .content h1 {
-        font: 30px/1em 'Lato', sans-serif;
-        padding-bottom: 0;
-    }
-}
-@media only screen and (max-width: 480px) {
     .comment {
-        margin-top: 20px;
-        width: 100%;
-        /*margin-top: 40px;*/
+        margin-top: 40px;
         height: auto;
-        padding-top: 10px;
+        padding-top: 20px;
     }
     .comment .avatar {
-        padding-right: 0;
         position: inherit;
         height: auto;
         width: 100%;
         padding-bottom: 10px;
     }
+    .comment .glyphicon {
+        display: none;
+    }
+
     .comment .username {
         display: block;
         padding-top: 15px;
         padding-bottom: 5px;
         padding-left: 0;
     }
+
     .comment .comment_date {
         display: block;
         padding-left: 0;
         padding-bottom: 5px;
+    }
+    .content h1 {
+        font: 30px/1em 'Lato', sans-serif;
+        padding-bottom: 0;
     }
 }
