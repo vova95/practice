@@ -1,10 +1,5 @@
 body {
-    margin: 0;
-    padding: 0;
     font-family: Lato, sans-serif;
-    font-size: 14px;
-    line-height: 22px;
-    color: #0c0c0c;
 }
 
 header {
@@ -107,9 +102,6 @@ img {
 
 /* Fade Slider*/
 
-#carousel {
-    max-height: 80%;
-}
 
 .carousel .item {
     -webkit-transition: 0.7s ease-in-out opacity;
@@ -149,42 +141,59 @@ img {
 
 /*-------Main container*/
 
+#member, #towards, #about, #contacts .container {
+    padding: 50px 0;
+}
+
+#member,#towards, #about, #contacts{
+    height: auto;
+}
+
+
+p{
+    margin-bottom: 22px;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.571;
+    text-align: left;
+}
+
 .row {
     margin: 0;
-}
-
-.row .title-box {
-    height: 30%;
-}
-
-.row h2 {
-    margin: 0;
     padding: 0;
+}
+
+.container h2 {
+    margin-top: 0; 
+    margin-bottom: 40px;
     font-size: 49px;
     font-family: "Lato", sans-serif;
     color: rgb(255, 255, 255);
-    line-height: 1.98;
     text-align: center;
-}
-
-.container {
-    padding-left: 0;
-    padding-right: 0;
 }
 
 /*Members----------------*/
 
 #member {
-    height: auto;
     background-color: rgb(92, 180, 193);
 }
 
-#member .col-lg-4, .col-md-4 {
+#member .container{
     padding: 0;
-    padding-left: 20px;
+}
+
+#member .container .col-lg-4, #member .container .col-md-4 {
+    padding: 0;
+    padding-left: 30px;
+}
+
+#member .container .col-lg-4:first-child{
+    padding-left: 0;
 }
 
 #member .num {
+    position: relative;
     float: left;
     border-radius: 50%;
     background-color: rgb(253, 204, 87);
@@ -200,7 +209,7 @@ img {
 }
 
 #member h4 {
-    margin-top: 20px;
+    margin-bottom: 22px;
     font-size: 28px;
     font-family: "Lato", sans-serif;
     color: rgb(255, 255, 255);
@@ -208,90 +217,11 @@ img {
     text-align: left;
 }
 
-#member p {
-    margin-top: 1em;
-    font-size: 14px;
-    font-family: "Lato", sans-serif;
-    color: rgb(255, 255, 255);
-    line-height: 1.571;
-    text-align: left;
-    z-index: 35;
-    margin-before: 1em;
-}
-
-#member, #towards, #about, #contacts .container {
-    padding-bottom: 50px;
-}
-
 /*Towards--------------*/
-#towards {
-    height: auto;
-}
 
-#towards .read-more-btn:after,
-.read-more-btn:before {
-    content: '';
-    width: 55%;
-    top: 0;
-    height: 100%;
-    background: #FDCC57;
-    box-sizing: content-box;
-    position: absolute;
-    transition: all 0.3s;
-    overflow: hidden;
-}
-
-#towards .read-more-btn span {
-    position: relative;
-    z-index: 24;
-}
-
-#towards .read-more-btn:before {
-    left: 0;
-}
-
-#towards .read-more-btn:after {
-    right: 0;
-}
-
-#towards .read-more-btn {
-    font-family: 'Lato', Times, serif;
-    font-size: 15pt;
-    font-weight: bold;
-    color: #ffffff;
-    display: block;
-    width: 180px;
-    height: 56px;
-    background: #5cb4c1;
-    transition: all 0.3s;
-    text-decoration: none;
-    line-height: 56px;
-    text-align: center;
-    position: relative;
-}
-
-#towards .button {
-    padding: 20px 45%;
-}
-
-#towards .read-more-btn:hover:before {
-    width: 0;
-    overflow: visible;
-}
-
-#towards .read-more-btn:hover:after {
-    width: 0;
-    overflow: visible;
-}
 
 #towards h2 {
     color: rgb(55, 66, 70);
-    line-height: 1.98;
-    z-index: 51;
-}
-
-#towards .row {
-    text-align: center;
 }
 
 #towards .img-couple {
@@ -324,7 +254,7 @@ img {
 
 }
 
-#towards figure:hover .zoom-btn img{;
+#towards figure:hover .zoom-btn img{
     transform: scale(1);
     opacity: 1;
     visibility: visible;
@@ -335,9 +265,8 @@ img {
     height: 100%;
     position: absolute;
     z-index: 25;
-    /*line-height: 100%;*/
-
 }
+
 .zoom-btn img{
     opacity: 0;
     position: absolute;
@@ -372,22 +301,74 @@ img {
     color: #5cb4c1;
 }
 
+#towards .button {
+    width: 100%;
+    padding: 22px;
+    text-align: center;
+}
+
+
+#towards .read-more-btn:after,
+.read-more-btn:before {
+    content: '';
+    width: 55%;
+    top: 0;
+    height: 100%;
+    background: #FDCC57;
+    box-sizing: content-box;
+    position: absolute;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+#towards .read-more-btn span {
+    position: relative;
+    z-index: 24;
+}
+
+#towards .read-more-btn:before {
+    left: 0;
+}
+
+#towards .read-more-btn:after {
+    right: 0;
+}
+
+#towards .read-more-btn {
+    left: 50%;
+    margin: 0 0 0 -90px;
+    font-family: 'Lato', Times, serif;
+    font-size: 15pt;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    width: 180px;
+    height: 56px;
+    background: #5cb4c1;
+    transition: all 0.3s;
+    text-decoration: none;
+    line-height: 56px;
+    text-align: center;
+    position: relative;
+}
+
+
+#towards .read-more-btn:hover:before {
+    width: 0;
+    overflow: visible;
+}
+
+#towards .read-more-btn:hover:after {
+    width: 0;
+    overflow: visible;
+}
+
 #about {
-    height: auto;
     background-color: rgb(233, 99, 142);
 }
 
-#about p {
-    font-size: 14px;
-    font-family: "Lato", sans-serif;
-    color: rgb(255, 255, 255);
-    line-height: 1.571;
-    text-align: left;
-    z-index: 74;
-}
-
 #about h6 {
-    margin: 20px 0;
+    margin: 0 0 20px 0;
     font-size: 23px;
     font-family: "Lato", sans-serif;
     color: rgb(255, 255, 255);
@@ -397,14 +378,8 @@ img {
 }
 
 #contacts {
-    height: auto;
     text-align: center;
     background: no-repeat;
-}
-
-#contacts .container {
-    padding: 70px 0;
-
 }
 
 #contacts span {
@@ -422,7 +397,6 @@ img {
 
 #contacts p {
     text-align: center;
-    color: #fff;
 }
 
 .phone:before {
@@ -433,9 +407,6 @@ img {
 
 .phone {
     font: normal 39px/47px Lato, sans-serif;
-    font-family: "Lato", sans-serif;
-    color: rgb(255, 255, 255);
-    line-height: 0.833;
 }
 
 .footer {
