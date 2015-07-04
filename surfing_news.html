@@ -10,12 +10,13 @@
     <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="libs/wow/dist/wow.min.js"></script>
 
-    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/main_menu.js"></script>
+    <script type="text/javascript" src="js/main_menu_controller.js"></script>
     <script type="text/javascript" src="js/jquery.iu.toTop.js"></script>
     <!--<script type="text/javascript" src="js/smoothing-scroll.js"></script>-->
 
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href="libs/fontawesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="libs/fontawesome/css/font-awesome.min.css"/>
     <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="libs/animate.css/animate.min.css" rel="stylesheet">
 
@@ -25,6 +26,8 @@
 
     <title></title>
     <script type="text/javascript">
+        window.selectedMenu = "News";
+
         new WOW().init();
         $(function () {
             $(window).scroll(function () {
@@ -47,47 +50,8 @@
         <a class="icon">
             <img class="logo" src="./img/logo.png">
         </a>
-        <div class="select_menu_tel">
-            <select class="select_menu">
-                <option value="#">Navigate to...</option>
-                <option value="#">Home</option>
-                <option value="#">About</option>
-                <option value="#">–Testimonials</option>
-                <option value="#">–Archives</option>
-                <option value="#">–FAQs</option>
-                <option value="#">Gallery</option>
-                <option value="#">–Gallery 2</option>
-                <option value="#">–Gallery 3</option>
-                <option value="#">––Category 1</option>
-                <option value="#">––Category 2</option>
-                <option value="#">––Category 3</option>
-                <option value="#">–Gallery 4</option>
-                <option value="#" selected="selected">News</option>
-                <option value="#">Contacts</option>
-            </select>
-        </div>
-        <div class="news_buttons">
-            <ul class="navigation">
-                <li><a class="home" href="">HOME</a></li>
-                <li>
-                    <a class="about" href="">ABOUT</a>
-                    <ul class="sub_menu">
-                        <li>
-                            <a href="">Testimonials</a>
-                            <ul class="sub_menu">
-                                <li><a href="">Archives</a></li>
-                                <li><a href="">FAQs</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">Archives</a></li>
-                        <li><a href="">FAQs</a></li>
-                    </ul>
-                </li>
-                <li><a class="gallery" href="">GALLERY</a></li>
-                <li><a class="news" href="">NEWS</a></li>
-                <li><a class="contacts" href="">CONTACTS</a></li>
-            </ul>
-        </div>
+        <div class="select_menu_tel"></div>
+        <div class="news_buttons"></div>
     </div>
 </div>
 <div class="navigation_panel"></div>
@@ -269,7 +233,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row navbar-fixed-bottom">
             <div class="col-md-12">
                 <a href="#">Surfing</a> &copy; 2015. <a href="#">Privacy Policy</a>
             </div>
