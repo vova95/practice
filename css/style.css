@@ -19,7 +19,7 @@ body {
 h1 {
     padding: 0;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-weight: 500;
     color: #080808;
     font: 49px/1em 'Lato', sans-serif;
@@ -30,6 +30,7 @@ h1 {
                     Header Section
 ========================================================*/
 .menu_panel {
+    text-transform: uppercase;
     position: fixed;
     padding: 10px 0;
     width: 100%;
@@ -90,15 +91,14 @@ h1 {
     transition: height 0.3s;
 }
 
-.navigation > li.selected:before,
-.navigation > li.highlighted:before,
+.navigation > li.menu_item_selected:before,
+.navigation > li.menu_item_highlighted:before,
 .navigation > li.without_sub_menu:hover:before {
     height: 100%;
     padding-bottom: 25px;
 }
 
 .sub_menu {
-    opacity: 0.95;
     position: absolute;
     top: 100%;
     background: #2e3949;
@@ -107,11 +107,41 @@ h1 {
     min-width: 170px;
     z-index: 10;
     text-align: left;
+    overflow: hidden;
+}
+
+.sub_menu,
+.sub_menu_pending_hide .sub_menu_hiding,
+.sub_menu_hiding .sub_menu_hiding {
+    opacity: 0.95;
+}
+
+.sub_menu_showing,
+.sub_menu_shown {
+    height: 110px;
+}
+
+.sub_menu_shown {
+    overflow: visible;
+}
+
+.sub_menu_showing {
+    transition: height 0.5s;
 }
 
 .sub_menu_hidden {
-    overflow: hidden;
     height: 0;
+}
+
+.sub_menu_hiding {
+    overflow: visible;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.sub_menu_pending_hide .sub_menu_hiding,
+.sub_menu_hiding .sub_menu_hiding {
+    transition: none;
 }
 
 .sub_menu .sub_menu {
@@ -142,7 +172,7 @@ h1 {
 }
 
 .sub_menu > li:hover > a,
-.sub_menu > li.highlighted > a {
+.sub_menu > li.menu_item_highlighted > a {
     color: #fff;
 }
 
@@ -166,7 +196,7 @@ h1 {
 .news_section {
     padding-right: 75px;
     padding-left: 75px;
-    padding-top: 30px;
+    padding-top: 45px;
 }
 .categories {
     text-align: center;
@@ -192,7 +222,7 @@ h1 {
 }
 
 ul.list a {
-    color: rgba(28, 15, 15, 0.73);
+    color: #0c0c0c;
     font: 13px/1.5em 'Lato', sans-serif;
     display: block;
     position: relative;
@@ -209,7 +239,7 @@ ul.list a:before {
     padding: 0;
     position: relative;
     top: -2px;
-    right: 2px;
+    right: 0;
     overflow: hidden;
     transition: 0.4s Ease;
 }
@@ -507,7 +537,13 @@ ul.list li a:hover {
 .main_footer a:hover {
     color: #fdcc57;
 }
-
+#back-top-wrapper {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  overflow: hidden;
+  z-index: 99;
+}
 #back-top-wrapper #back-top a {
   width: 48px;
   height: 48px;
@@ -515,7 +551,7 @@ ul.list li a:hover {
   text-align: center;
   background: none;
   color: #bbb;
-  display: none;
+  display: block;
 }
 #back-top-wrapper #back-top a:after {
   content: '';
