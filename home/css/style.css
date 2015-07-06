@@ -111,6 +111,24 @@ img {
     left: 0 !important;
 }
 
+#carousel .carousel-indicators li {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#carousel .carousel-indicators .active {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  background-color: #fdcc57;
+}
 .carousel .next.left,
 .carousel .prev.right {
     opacity: 1;
