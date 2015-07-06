@@ -1,111 +1,212 @@
 <?php get_header(); ?>
-<section class="news_section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                <div class="content block">
-                    <?php if(have_posts()) : ?>
-                    <?php while(have_posts()) : the_post(); ?>
-                    <article class="current_news">
-                        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+    <script type="text/javascript">
+        window.selectedMenu = "Home";
+</script>
 
-                        <div class="container wow fadeIn">
-                            <a href="<?php the_permalink(); ?>"><img class="news_image" src="<?php bloginfo('template_url'); ?>/img/img-10.jpg"
-                                                    alt="Aliquam erat volutpat"/></a>
-                        </div>
-                        <?php the_excerpt(); ?>
+<div id="carousel" class="carousel slide main-carousel">
+    <ol class="carousel-indicators">
+        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="<?php bloginfo('template_url'); ?>/img/slide1.jpg" alt="">
 
-                        <a class="read_more_btn btn_vertical" href="<?php the_permalink(); ?>"><span>READ MORE</span></a>
-                    </article>
-                    <?php endwhile; ?>
-                    <?php endif; ?>
-                    <div class="pages">
-                        <!-- <ul class="pagination pagination-sm">
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                        </ul> -->
-                        <?php posts_nav_link() ?>
+            <div class="carousel-caption">
+                <h2>With love for the sport of surfing</h2>
+            </div>
+        </div>
+        <div class="item">
+            <img src="<?php bloginfo('template_url'); ?>/img/slide2.jpg" alt="">
+
+            <div class="carousel-caption">
+                <h2>Catch the highest wave</h2>
+            </div>
+        </div>
+        <div class="item">
+            <img src="<?php bloginfo('template_url'); ?>/img/slide3.jpg" alt="">
+
+            <div class="carousel-caption">
+                <h2>Surfing information for surfing lifestyle</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div id="member" class="row">
+        <div class="container">
+           <h2>Become a member</h2>
+            <div class="col-lg-4 col-md-4">
+                <section class="row">
+                    <span class="num">1</span>
+                    <h4>Excepteur sint occ aecat cupidatat</h4>
+                </section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <section class="row">
+                    <span class="num">2</span>
+                    <h4>Lorem ipsum dolor sit amet conse ct</h4>
+                </section>
+                <p>Dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat. Duis aute irure dolor.
+                    </p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <section class="row">
+                    <span class="num">3</span>
+                    <h4 style="width 20%">Dolor sit amet conse ctetur adipisicing</h4>
+                </section>
+                <p>Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <section class="row">
+                    <span class="num">3</span>
+                    <h4 style="width 20%">Dolor sit amet conse ctetur adipisicing</h4>
+                </section>
+                <p>Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+            </div><div class="col-lg-4 col-md-4">
+                <section class="row">
+                    <span class="num">3</span>
+                    <h4 style="width 20%">Dolor sit amet conse ctetur adipisicing</h4>
+                </section>
+                <p>Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+            </div>
+        </div>
+    </div>
+    <div id="towards" class="row">
+        <div class="container">
+<!--            <div class="title-box"></div>-->
+            <h2>Towards wind and waves</h2>
+            <div class="col-lg-6 img-couple">
+                <div class="row">
+                    <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 col-lg-offset-0 col-md-offset-2  col-sm-offset-0 col-xs-offset-4 ">
+                        <figure>
+                            <a href="#" title="Excepteur sint occ aecat cupidatat">
+                                <div class="zoom-btn">
+                                    <img src="<?php bloginfo('template_url'); ?>/img/zoom.png">
+                                </div>
+                                <img src="<?php bloginfo('template_url'); ?>/img/surfer1.jpg" alt="Excepteur sint occ aecat cupidatat">
+                            </a>
+                        </figure>
+                        <h5>
+                            <a href="#" title="Excepteur sint occ aecat cupidatat">Excepteur sint occ aecat
+                                cupidatat</a>
+                        </h5>
+                    </div>
+                    <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-4">
+                        <figure>
+                            <a href="#" title="Excepteur sint occ aecat cupidatat">
+                                <div class="zoom-btn">
+                                    <img src="<?php bloginfo('template_url'); ?>/img/zoom.png">
+                                </div>
+                                <img src="<?php bloginfo('template_url'); ?>/img/surfer2.jpg" alt="Sint occaecat cupidatat non proident">
+                            </a>
+                        </figure>
+                        <h5>
+                            <a href="#" title="Sint occaecat cupidatat non proident">Sint occaecat cupidatat non
+                                proident</a>
+                        </h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <?php get_sidebar(); ?>
-                <div class="recent_posts block">
-                    <h1>Recent posts</h1>
-
-                    <div class="post">
-                        <img class="recent_post_image" src="<?php bloginfo('template_url'); ?>/img/img-10.jpg" alt="Aliquam erat volutpat"/>
-                        <span class="glyphicon glyphicon-calendar"></span>
-                        <time class="post_date">May 27, 2014 6:31 am</time>
-
-                        <h3><a href="#">Aliquam erat volutpat</a></h3>
-
-                        <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim,
-                            pulvinar
-                            ac,
-                            lorem. Lorem ipsum dolor sit…</p>
+            <div class="col-lg-6 img-couple">
+                <div class="row">
+                    <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 col-lg-offset-0 col-md-offset-2  col-sm-offset-0 col-xs-offset-4 ">
+                        <figure>
+                            <a href="#" title="Sunt in culpa qui officia deserunt mollit">
+                                <div class="zoom-btn">
+                                    <img src="<?php bloginfo('template_url'); ?>/img/zoom.png">
+                                </div>
+                                <img src="<?php bloginfo('template_url'); ?>/img/surfer3.jpg" alt="Sunt in culpa qui officia deserunt mollit">
+                            </a>
+                        </figure>
+                        <h5>
+                            <a href="#" title="Sunt in culpa qui officia deserunt mollit">Sunt in culpa qui officia
+                                deserunt
+                                mollit</a>
+                        </h5>
                     </div>
-                    <div class="post">
-                        <img class="recent_post_image" src="<?php bloginfo('template_url'); ?>/img/img-11.jpg" alt="Mauris posuere"/>
-                        <span class="glyphicon glyphicon-calendar"></span>
-                        <time class="post_date">March 14, 2013 8:28 pm</time>
-
-                        <h3><a href="#">Mauris posuere</a></h3>
-
-                        <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim,
-                            pulvinar
-                            ac,
-                            lorem. Lorem ipsum dolor sit…</p>
-                    </div>
-                    <div class="post">
-                        <img class="recent_post_image" src="<?php bloginfo('template_url'); ?>/img/img-12.jpg" alt="Mauris posuere"/>
-                        <span class="glyphicon glyphicon-calendar"></span>
-                        <time class="post_date">March 5, 2013 8:31 pm</time>
-
-                        <h3><a href="#">Donec tempor libero</a></h3>
-
-                        <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim,
-                            pulvinar
-                            ac,
-                            lorem. Lorem ipsum dolor sit…</p>
-                    </div>
-                </div>
-                <div class="recent_comments block">
-                    <h1>Recent Comments</h1>
-
-                    <div class="comment">
-                        <img class="avatar" src="<?php bloginfo('template_url'); ?>/img/avatar.png"/>
-                        <span class="username"><span class="glyphicon glyphicon-user"></span>Admin</span>
-                    <span class="comment_date"><time
-                            class="glyphicon glyphicon-calendar"></time>May 27, 2014 8:09 am</span>
-                        <a href="#">Aliquam erat volutpat</a>
-
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus.
-                            Aenean...</p>
-                    </div>
-                    <div class="comment">
-                        <img class="avatar" src="<?php bloginfo('template_url'); ?>/img/avatar.png"/>
-                        <span class="username"><span class="glyphicon glyphicon-user"></span>Admin</span>
-                    <span class="comment_date"><time
-                            class="glyphicon glyphicon-calendar"></time>May 27, 2014 8:09 am</span>
-                        <a href="#">Aliquam erat volutpat</a>
-
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus.
-                            Aenean...</p>
-                    </div>
-                    <div class="comment">
-                        <img class="avatar" src="<?php bloginfo('template_url'); ?>/img/avatar.png"/>
-                        <span class="username"><span class="glyphicon glyphicon-user"></span>Admin</span>
-                    <span class="comment_date"><time
-                            class="glyphicon glyphicon-calendar"></time>May 27, 2014 8:09 am</span>
-                        <a href="#">Aliquam erat volutpat</a>
-
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus.
-                            Aenean...</p>
+                    <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-4">
+                        <figure>
+                            <a href="#" title="Deserunt mollit anim id est laborum">
+                                <div class="zoom-btn">
+                                    <img src="<?php bloginfo('template_url'); ?>/img/zoom.png">
+                                </div>
+                                <img src="<?php bloginfo('template_url'); ?>/img/surfer4.jpg" alt="Deserunt mollit anim id est laborum">
+                            </a>
+                        </figure>
+                        <h5>
+                            <a href="#" title="Deserunt mollit anim id est laborum">Deserunt mollit anim id est
+                                laborum</a>
+                        </h5>
                     </div>
                 </div>
             </div>
         </div>
+    <div class="button">
+        <a class="read_more_btn" href="<?php the_permalink(); ?>"><span>READ MORE</span></a>
     </div>
-</section>
+    </div>
+    <div id="about" class="row">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h6>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        labori.</h6>
+
+                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h6>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco labori.</h6>
+
+                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contacts" style="background-image: url('<?php bloginfo('template_url'); ?>/img/cb.jpg');">
+        <div class="container">
+            <section>
+                <h1>
+                    <span>Surf school:</span><br>
+                    <span>Monday - Saturday 8:00 a.m. - 9:00 p.m. </span><br>
+                    <span>Sunday 10 a.m - 6 p.m. </span><br>
+                </h1>
+                <address>
+                    <h2>
+                        <strong class="phone">800-2345-6789</strong>
+                    </h2>
+                </address>
+                <p>
+                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor.
+                </p>
+            </section>
+
+        </div>
+    </div>
+</div>
 <?php get_footer(); ?>

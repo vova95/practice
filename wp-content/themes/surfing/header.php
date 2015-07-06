@@ -19,15 +19,36 @@
     <!--<script type="text/javascript" src="js/smoothing-scroll.js"></script>-->
 
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/libs/fontawesome/css/font-awesome.min.css"/>
+    <!--<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/libs/fontawesome/css/font-awesome.min.css"/> -->
     <link href="<?php bloginfo('template_url'); ?>/libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/libs/animate.css/animate.min.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/media.css">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/news/style.css" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/news/media.css">
+	
+	<!-- HOME -->
+	<!--<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css"> -->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/home/bootstrap.css">  <!-- -->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/home/style.css">
+	<!-- /HOME -->
+	
+	<!-- Gallery, About -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--<link rel="shortcut icon" href="favicon.ico" /> -->
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> <!-- -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" />
+	<!--<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/galleryabout/main.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/galleryabout/components.css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/galleryabout/media.css" />
+	<!-- /Gallery, About -->
+	
     <?php wp_get_archives('type=monthly&format=link'); ?>
-    <script type="text/javascript">
+ <!--   <script type="text/javascript">
         window.selectedMenu = "News";
 
         new WOW().init();
@@ -43,7 +64,7 @@
                 $('body,html').animate({scrollTop: 0}, 800);
             });
         });
-    </script>  
+    </script>  -->
 </head>
 <body>
 <header>
