@@ -179,7 +179,7 @@ h1 {
 .navigation_panel {
     width: 100%;
     margin: 0 0 20px;
-    padding: 115px 0 20px;
+    padding: 100px 0 20px;
     position: relative;
     background: #e9638e;
     z-index: 10;
@@ -214,7 +214,7 @@ h1 {
 }
 
 .categories ul {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 50px;
     list-style: none;
     padding-left: 0;

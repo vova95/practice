@@ -47,7 +47,7 @@ var mainMenu = [
     },
     {
     	name: "News",
-        href: "surfing_news.html"
+        href: "#"
     },
     {
     	name: "Contacts"
