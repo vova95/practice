@@ -5,11 +5,38 @@
         <link rel = "stylesheet" href = "/css/bootstrap.css" type = "text/css"/>
         <link rel = "stylesheet" href = "/css/bootstrap.min.css" type = "text/css"/>
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/font-awesome.min.css" type = "text/css"/>
         <link rel = "stylesheet" href="/css/style.css" type = "text/css"/>
-        <link rel="shortcut ico" href="/ico.png"/>
+        <link rel="shortcut ico" href="img/favicon.ico"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/wow/dist/wow.min.js"></script>
+
+        <script type="text/javascript" src="js/main_menu.js"></script>
+        <script type="text/javascript" src="js/main_menu_controller.js"></script>
+        <script type="text/javascript" src="js/jquery.iu.toTop.js"></script>
+        
+        
         <title>Contacts | Surfing</title>
-    
+       <script type="text/javascript">
+        window.selectedMenu = "Contacts";
+        new WOW().init();
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() != 0) {
+                    $('#top').fadeIn();
+                } else {
+                    $('#top').fadeOut();
+                }
+            });
+            $('#top').click(function () {
+                $('body,html').animate({scrollTop: 0}, 800);
+            });
+        });
+    </script>
         
     <script type="text/javascript">
         $(function() {
@@ -29,47 +56,27 @@
     <body id = "color">
    
 <header>
- 
-<div class="menu-panel">
-    <a class="icon">SURFING</a>
-    <div class="news-buttons">
-        <ul class="navigation">
-            <li><a class="home" href="">HOME</a></li>
-            <li>
-                <a class="about" href="">ABOUT</a>
-                <ul class="sub-menu">
-                    <li>
-                        <a href="">Testimonials</a>
-                        <ul class="sub-menu">
-                            <li><a href="">Archives</a></li>
-                            <li><a href="">FAQs</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Archives</a></li>
-                    <li><a href="">FAQs</a></li>
-                </ul>
-            </li>
-            <li><a class="gallery" href="">GALLERY</a></li>
-            <li><a class="news" href="">NEWS</a></li>
-            <li><a class="contacts" href="">CONTACTS</a></li>
-        </ul>
+<div class="menu_panel">
+    <div class="menu_panel_inner_container">
+        <a class="icon">
+            <img class="logo" src="./img/logo.png">
+        </a>
+        <div class="select_menu_tel"></div>
+        <div class="news_buttons"></div>
     </div>
 </div>
-<div class="navigation-panel"></div>
-  
-</header> 
+<div class="navigation_panel"></div>
+</header>
         <div class = "container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193747.41164981434!2d-73.94499755!3d40.645244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C+NY%2C+USA!5e0!3m2!1sen!2sua!4v1435576430813"  allowfullscreen></iframe>  
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193747.41164981434!2d-73.94499755!3d40.645244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C+NY%2C+USA!5e0!3m2!1sen!2sua!4v1435576430813"  allowfullscreen></iframe>
         </div>
-            <div class = "spacer">
-
-            </div>
-            <div class = "container">
+            <div class = "spacer"></div>
+        <div class="container">
             <div class="row">
-                    <div class = "col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class = "col-lg-4 col-md-4 col-sm-4 col-xs-12">
     
                         <h2 class = "title-box">Contact info</h2>
-                        <h5 class="form-content" id = "area">
+                        <h5 class = "area">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
                         </h5>
                         <p>
@@ -86,7 +93,7 @@
                     </div>
                 
 
-                    <div class= "col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                    <div class= "col-lg-8 col-md-8 col-sm-8 col-xs-12">
                         
                     <h2 class = "title-box">Contact form</h2>
                                  <div class="row">
@@ -94,24 +101,32 @@
                                     <input type = "text" name = "name" value = "" placeholder="Name:" class = "form"/>
                                     <input type = "text" name = "e-mail" value = "" placeholder="E-mail:" class = "form"/>
                                     <input type = "tel" name = "phone" value = "" placeholder="Phone:" class = "form"/>
-                                    <textarea placeholder="Message:" class = "form" id = "message"></textarea>
-                                    <input type = "reset" name = "reset" value = "CLEAR" id = "button"/>
-                                    <input type="button" name = "submit" value = "SEND" id = "button"/> 
+                                    <textarea placeholder="Message:" class = "form message"></textarea>
+                                    <span class="input-btn"><input type = "reset" name = "reset" value = "CLEAR" id = "btn"/></span>
+                                  <span class="input-btn"><input type="button" name = "submit" value = "SEND" id = "btn"/></span>
                                   </form>
                         </div>
                         </div>
-          
+            </div>
                
+          
                 </div>
-                </div>
-<footer class="main_footer wrapper">
- <div class="container">
-  <div class="row">
-   <div class="col-md-12">
+        
+<footer class="main_footer">
+    <div id="back-top-wrapper" class="visible-desktop">
+        <div id="back-top">
+            <a id="top" style="display: none">
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
                 <a href="#">Surfing</a> &copy; 2015. <a href="#">Privacy Policy</a>
-   </div>
-  </div>
- </div>
+            </div>
+        </div>
+    </div>
 </footer>
     </body>
 </html>
