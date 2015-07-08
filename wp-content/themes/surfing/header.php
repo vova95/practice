@@ -24,7 +24,7 @@
     <link href="<?php bloginfo('template_url'); ?>/libs/animate.css/animate.min.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/news/style.css" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>/style.css" />
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/news/media.css">
 	
 	<!-- HOME -->

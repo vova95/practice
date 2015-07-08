@@ -1,0 +1,198 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .s_portfolio .category_ul,
+    .s_portfolio .category_li {
+        font-weight: 400;
+        padding-top: 10px;
+    }
+
+    .row strong{
+        font-weight: 400;
+        margin-right: 0px;
+    }
+    .category_li:before{
+        padding: 0 10px
+    }
+
+    .about .nav li{
+		padding: 0 65px 0 0
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .s_portfolio .category_ul,
+    .s_portfolio .category_li {
+        text-align: left;
+        font-weight: 400;
+        padding-top: 10px;
+        display: block;
+    }
+    .s_portfolio .category_ul{
+        margin: 10px 0;
+    }
+    .category_li:before {
+        display : none ;
+    }
+    .row strong{
+        text-align: left;
+        display: block;
+        font-weight: 400;
+        padding: 0;
+        margin-left: 40px
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .s_portfolio .category_ul,
+    .s_portfolio .category_li {
+        text-align: left;
+        font-weight: 400;
+        padding-top: 10px;
+        display: block;
+    }
+    .s_portfolio .category_ul{
+        margin: 10px 0;
+    }
+    .category_li:before {
+        display : none ;
+    }
+    .row strong{
+        text-align: left;
+        display: inline-block;
+        font-weight: 400;
+        padding: 0;
+        margin-left: 40px
+    }
+    
+/* ABOUT */
+    .about_history .nav {
+        margin-bottom: 50px;
+    }
+	.about .nav li{
+		padding: 0 20px 0 0
+	}
+    .about .tabs-wrapper,
+    .about .tab-content{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about_history .left_img{
+        width: 100%;
+        display: block;
+    }
+
+    .about_history .left_img img{
+        width: 100%;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .s_portfolio .category_ul,
+    .s_portfolio .category_li {
+        text-align: left;
+        font-weight: 400;
+        padding-top: 10px;
+        display: block;
+    }
+    .s_portfolio .category_ul{
+        margin: 10px 0;
+    }
+    .category_li:before {
+        display : none ;
+    }
+    .row strong{
+        text-align: left;
+        display: inline-block;
+        font-weight: 400;
+        padding: 0;
+        margin-left: 0px
+    }
+
+    /*ABOUT*/
+
+
+    .about .about_members ul li{
+    	display: block;
+    	margin-left: 0;
+    	margin-right: 100%
+    }
+    .about .nav li{
+    	display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .about .nav{
+    	display: block;
+    }
+    .about .about_members .col-xs-3{
+        width: 45%;
+        display: inline-block;
+        margin-right: 0;
+    }
+    .nav li:after {
+        background: transparent;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.port_item_switch{
+		border-top: 1px solid;
+  		border-bottom: 1px solid;
+  		padding: 0;
+  		margin: 0px;
+  		margin-bottom: 30px;
+  		border-color: #d3d3d2;
+	}
+	.port_item_switch .pager .row{
+		padding: 0;
+	}
+	.port_item_switch .pager li{
+		padding: 3px 0;
+		margin: 0;
+		/*line-height: 20px;*/
+	}
+	 .row strong{
+        text-align: left;
+        font-weight: 400;
+        padding: 0;
+        margin-left: 0px
+    }
+    .about .about_members .col-xs-3{
+    	width: 100%
+    }
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
