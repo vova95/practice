@@ -59,18 +59,31 @@ function create_posttypes()
             'supports' => array('title', 'editor', 'custom-fields')
         )
     );
+    register_post_type('Schedule',
+        array(
+            'labels' => array(
+                'name' => __('schedule'),
+                'singular_name' => __('schedule')
+            ),
+            'public' => true,
+            'has_archive' => false,
+            'rewrite' => array('slug' => 'schedule'),
+            'supports' => array('title', 'editor', 'custom-fields')
+        )
+    );
     register_post_type('Contacts',
         array(
             'labels' => array(
                 'name' => __('contacts'),
-                'singular_name' => __('Contacts')
+                'singular_name' => __('contacts')
             ),
             'public' => true,
             'has_archive' => false,
             'rewrite' => array('slug' => 'contacts'),
             'supports' => array('title', 'editor', 'custom-fields')
         )
-    );
+    );    
+
 }
 
 
